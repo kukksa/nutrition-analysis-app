@@ -74,9 +74,9 @@ setMyNutrition(data);
       <div>    
         {
           myNutrition && Object.values(myNutrition.totalNutrients)
-          .map(({ label, quantity, unit}, id) =>
+          .map(({ label, quantity, unit}) =>
           <Nutrition
-          key = {id}
+          key = {label}
           label={label}
           quantity={quantity.toFixed(2)}
           unit={unit}/>
